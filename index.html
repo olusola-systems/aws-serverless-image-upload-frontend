@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serverless Image Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Serverless Image Upload</h1>
+
+        <p class="description">
+            Upload an image securely using a serverless AWS architecture.
+        </p>
+
+        <form id="uploadForm">
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/*"
+                required
+            >
+
+            <button type="submit">
+                Upload Image
+            </button>
+
+        </form>
+
+        <div id="status"></div>
+
+        <div id="metadata" class="metadata"></div>
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
